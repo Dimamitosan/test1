@@ -1,10 +1,22 @@
+const card ={}
+
 
 document.addEventListener("DOMContentLoaded",() =>{
 
     const menuBtns = document.querySelectorAll(".menu__btn");
     const drops = document.querySelectorAll(".dropdown");
    
-    
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('dropdown__btn')) { return }
+        let curServ = e.target.id
+        card[curServ] = (card[curServ] ?? 0) + 1;
+        console.log(card)
+        alert(`${curServ} added into your card`)
+        console.log(typeof(localStorage[curServ]))
+        localStorage.setItem(curServ, 1);
+        console.log(localStorage)
+      });
+
     menuBtns.forEach(el=>{
 
         el.addEventListener("click", (e)=>{
