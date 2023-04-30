@@ -7,7 +7,7 @@
 main{
     flex:1 1 auto;
 }
-.content{
+.container{
     margin: 0 5%;
     max-width:90%;
 }
@@ -38,9 +38,17 @@ main{
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
-.cart{
-    height: 100px;
-    background-color: yellow;
+
+.services{
+    width:100%;
+}
+
+.coll{
+    text-align: center;
+}
+
+.cart tr{
+    width: 100%;
 }
 
 .purchase--info{
@@ -55,6 +63,30 @@ main{
     color: aqua;
 }
 
+.cart{
+    display: flex;
+   font-size: 18px;
+   background-color: #3c2e7a;
+   color: white;
+}
+
+.cart td{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.cart p{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background-color: blue;
+    height: 800px;
+}
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
