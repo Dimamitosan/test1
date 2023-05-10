@@ -1,3 +1,8 @@
+html { height: 100%; } 
+body {
+    min-height: 100%;
+    background-color: black;
+}
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -37,7 +42,7 @@ main{
     border: 2px solid black;
 }
 
-.order__button{
+.lng-order__button{
     padding: 10px;
     color: white;
     background-color: #3c2e7a;
@@ -50,30 +55,56 @@ main{
 /* -----------------------------------------------------------------------*/
 /* -----------------------------------------------------------------------*/
 
+@media (max-width: 657px) { 
+    .lng-about__text{
+        width: 70%;
+    }
+ }
+
 
 .about__us{
-    background-image: url(professional-cleaning-company.jpeg);
+    background-image: url(../pics/professional-cleaning-company.jpeg);
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: center;
 }
 
-.about__text{
+.lng-about__text{
     color: black;
     font-size: 20px;
     width: 50%;
 }
 
-.about{
+@media (max-width: 775px) { 
+    .lng-about__text{
+        width: 70%;
+    }
+ }
+
+ @media (max-width: 557px) { 
+    .lng-about__text{
+        width: 100%;
+    }
+ }
+ @media (max-width: 340px) { 
+    .lng-about__text{
+        width: 100%;
+        font-size: 17px;
+    }
+ }
+
+
+.lng-about{
     color: black;
     font-size: 34px;
     margin: 0 0 20px 0;
 }
 
 footer{
+    
     background-color: black;
     padding: 10px;
 }
@@ -100,7 +131,7 @@ footer{
     padding: 100px 0 0 0;
 }
 .product{
-    margin: 0 0 150px 0;
+    margin: 0 0 20px 0;
     background-color: white;
     text-align: center;
 }
@@ -109,6 +140,10 @@ footer{
     padding: 10px 0;
 }
 
+.space {
+    padding-top: 100px;
+    background-color: pink;
+}
 
 /* Dropping menu */
 
@@ -119,7 +154,7 @@ footer{
 }
 
 .menu{
-    height: 40px;
+    /* height: 40px; */
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -127,7 +162,8 @@ footer{
 
 
 .menu__btn{
-    height: 100%;
+    z-index: 0;
+    height: fit-content;
     font-size: 28px;
     width:100%;
     border: none;
@@ -145,12 +181,13 @@ footer{
 }
 
 .menu__item{
-    height: 100%;
+    height: fit-content;
     width:100%;
     position: relative;
 }
 
 .dropdown__btn{
+    z-index: 2;
     width:100%;
     font-size: 24px;
     justify-content: center;
@@ -167,6 +204,7 @@ footer{
     border-bottom: 2px solid white;
 }
 .dropdown__item{
+    z-index: 2;
     border-top: 2px solid white;
     padding: 3px;
     display: flex;
@@ -180,6 +218,7 @@ footer{
 }
 
 .dropdown{
+    z-index: 2;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     visibility: hidden;
     opacity: 0;

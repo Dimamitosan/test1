@@ -28,12 +28,21 @@ main{
    height: 80px;
 }
 
-.order__button{
+.lng-main__button{
     padding: 10px;
     color: white;
     background-color: #3c2e7a;
     border-radius: 50px;
     font-size: 28px;
+}
+.change-lang{
+    margin: 0 0 0 30px;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
 }
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
@@ -87,6 +96,17 @@ main{
     background-color: blue;
     height: 800px;
 }
+
+.counter{
+    display: flex;
+    align-items: center;
+}
+.counter button{
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+}
+
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/

@@ -1,317 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <main>
-        <div class="header">
-            <div class="content">
-                <div class="header__body">
-                    <a href="#" >
-                         <img class="header__logo" src="Untitled.jpeg" alt="logo">
-                    </a>
-                    <div class="menu">
-                        <a href="card.html" 
-                        class = "lng-order__button">Order</a>
-                        <select class="change-lang">
-                            <option value="ru" selected>FI</option>
-                            <option value="en">EN</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about__us">
-            <div class="content">
-                <p class="lng-about">About</p>
-                <div class="lng-about__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Tempora dolorum voluptatibus eius distinctio, voluptatum
-                        ratione voluptate quos dicta at delectus non assumenda
-                        doloremque quisquam voluptates totam obcaecati est 
-                        aspernatur voluptatem praesentium possimus minima 
-                        consectetur repudiandae.
-                        Incidunt quidem cumque laboriosam quisquam?</p>
-                </div>  
-            </div>
-        </div>
-        <div class="services">
-            <div class="container, content">
-                <div class="row">
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="1-chair">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="2-chair">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="3-chair">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>  
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="1-bag">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="2-bag">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn" id="3-bag">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                        <div class="product">
-                            <div class="image">
-                                <img src="http://placehold.it/200x300" alt="">
-                            </div>
-
-                            <ul class="menu list-reset">
-                                <li class="menu__item">
-                                    <button class="menu__btn">Choose vol</button>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list list-reset">
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    1 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    2 chair
-                                                </button>
-                                            </li>
-                                            <li class="dropdown__item">
-                                                <button class="dropdown__btn">
-                                                    3 chair
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+            <div class="header">
+                <div class="content">
+                    <div class="header__body">
+                        <a href="#">
+                            <img class="header__logo" src="pics/Untitled.jpeg" alt="logo">
+                        </a>
+                        <div class="menu">
+                            <a href="card.html" class="lng-order__button">Order</a>
+                            <select class="change-lang">
+                                <option value="fi">FI</option>
+                                <option value="en">EN</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
+            <div class="about__us">
+                <div class="content">
+                    <p class="lng-about">About:</p>
+                    <div class="lng-about__text">
+                        <p>Tervetuloa vuoden 2023 siivouspalveluyritykseen! Olemme ylpeitä tarjoamistamme laadukkaista
+                            ja luotettavista siivouspalveluista, jotka auttavat asiakkaitamme pitämään kodit ja
+                            toimitilat puhtaina ja viihtyisinä.
+
+                            Meidän ammattitaitoiset siivoojamme ovat koulutettuja ja kokemuksellisia, joten voit olla
+                            varma että he hoitavat siivoustyöt nopeasti ja tehokkaasti. Käytämme vain
+                            ympäristöystävällisiä ja turvallisia puhdistusaineita, joten voit olla huoleti siitä, että
+                            kotisi tai toimitilasi ovat turvallisia ja puhtaita.
+
+                            Tarjoamme laajan valikoiman siivouspalveluita, kuten säännöllistä koti- ja
+                            toimitilasiivousta, ikkunanpesua, lattian vahaus ja mattopesua. Voit myös pyytää meiltä
+                            erityisesti räätälöityjä siivouspalveluita, jotka vastaavat tarkasti sinun tarpeitasi.
+
+                            Asiakkaidemme tyytyväisyys on meille erittäin tärkeää, ja siksi pyrimme aina tarjoamaan
+                            parhaan mahdollisen palvelun ja ylittämään asiakkaidemme odotukset. Yhdessä voimme pitää
+                            kodit ja toimitilat puhtaina ja viihtyisinä.
+
+                            Ota yhteyttä meihin tänään ja pyydä ilmainen tarjous siivouspalveluistamme!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="container, content">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+
+                                <ul class="menu list-reset">
+                                    <li class="menu__item">
+                                        <button class="menu__btn lng-price-for-sofas">Pesuhinnasto sohville</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-2-sofa" id="2-sofa" value="24"
+                                                        data-price="120.00">
+                                                        Kahden istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-3-sofa" id="3-sofa"
+                                                        value="Kolmen istuttava" data-price="160.00">
+                                                        Kolmen istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-4-sofa" id="4-sofa"
+                                                        value="Neljän istuttava" data-price="185.00">
+                                                        Neljän istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-5-sofa" id="5-sofa"
+                                                        value="Viiden istuttava" data-price="225.00">
+                                                        Viiden istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-6-sofa" id="6-sofa"
+                                                        value="Kuuden istuttava" data-price="255.00">
+                                                        Kuuden istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-7-sofa" id="7-sofa"
+                                                        value="Seitsemän istuttava" data-price="280.00">
+                                                        Seitsemän istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-8-sofa" id="8-sofa"
+                                                        value="Kahdeksan istuttava" data-price="305.00">
+                                                        Kahdeksan istuttava
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-big-sofa" id="big-sofa"
+                                                        value="Isommille sohville" data-price="340.00">
+                                                        Isommille sohville
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-2-sofa-def" id="2-sofa-def"
+                                                        value="Suojakäsittely pesun yhteydessä / sohva"
+                                                        data-price="29.00">
+                                                        Suojakäsittely pesun yhteydessä / sohva
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+                                <div class="menu list-reset">
+
+                                    <div class="menu__item">
+                                        <button class="menu__btn lng-chairs-ottoman-armchairs-cleaning">Pesuhinnasto
+                                            tuoleille</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-kitchen-chair" id="kitchen-chair"
+                                                        value="Keittiön tuolit (kpl)" data-price="25.00">
+                                                        Keittiön tuolit (kpl)
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-ottoman" id="ottoman"
+                                                        value="Rahin pesu" data-price="40.00">
+                                                        Rahin pesu
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-armchair" id="armchair"
+                                                        value="Nojatuolin pesu" data-price="80.00">
+                                                        Nojatuolin pesu
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-def-armchair" id="def-armchair"
+                                                        value="Suojakösittely pesun yhteydessä / nojatuoli"
+                                                        data-price="19.00">
+                                                        Suojakösittely pesun yhteydessä / nojatuoli
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+
+                                <ul class="menu list-reset">
+                                    <li class="menu__item">
+                                        <button class="menu__btn lng-carpets">Maton syväpuhdistus ja pesu</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-1pcs" id="carpet-1pcs"
+                                                        value="Matto alle 5 m² - 1 kpl" data-price="70.00">
+                                                        Matto alle 5 m² - 1 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-2pcs" id="carpet-2pcs"
+                                                        value="Matto alle 5 m² - 2 kpl" data-price="128.00">
+                                                        Matto alle 5 m² - 2 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-3pcs" id="carpet-3pcs"
+                                                        value="Matto alle 5 m² - 3 kpl" data-price="175.00">
+                                                        Matto alle 5 m² - 3 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-4pcs" id="carpet-4pcs"
+                                                        value="Matto alle 5 m² - 4 kpl" data-price="210.00">
+                                                        Matto alle 5 m² - 4 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-5pcs" id="carpet-5pcs"
+                                                        value="Matto alle 5 m² - 5 kpl" data-price="250.00">
+                                                        Matto alle 5 m² - 5 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-6pcs" id="carpet-6pcs"
+                                                        value="Matto alle 5 m² - 6 kpl" data-price="280.00">
+                                                        Matto alle 5 m² - 6 kpl
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-fitted-carpet-mini"
+                                                        id="fitted-carpet-mini" value="Kokolattiamatto alle 100 m² / m²"
+                                                        data-price="15.00">
+                                                        Kokolattiamatto alle 100 m² / m²
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-fitted-carpet-big"
+                                                        id="fitted-carpet-big" value="Kokolattiamatto yli 101 m² / m²"
+                                                        data-price="13.00">
+                                                        Kokolattiamatto yli 101 m² / m²
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-carpet-def" id="carpet-def"
+                                                        value="Suojakäsittely matto / m²" data-price="5.00">
+                                                        Suojakäsittely matto / m²
+                                                    </button>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+
+                                <ul class="menu list-reset">
+                                    <li class="menu__item">
+                                        <button class="menu__btn lng-bedsbeds">Sängyn syväpuhdistus ja pesu</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-single-bed" id="single-bed"
+                                                        value="Yhden hengen sänky" data-price="89.00">
+                                                        Yhden hengen sänky
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-double-bed" id="double-bed"
+                                                        value="Parisänky" data-price="129.00">
+                                                        Parisänky
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-def-bed" id="def-bed"
+                                                        value="Suojakäsittely / sänky" data-price="199.00">
+                                                        Suojakäsittely / sänky
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+
+                                <ul class="menu list-reset">
+                                    <li class="menu__item">
+                                        <button class="menu__btn lng-windows">Ikkunoiden pesu</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-studio" id="studio" value="Yksiö"
+                                                        data-price="80">
+                                                        Yksiö
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-one-bedroom" id="one-bedroom"
+                                                        value="Kaksio²" data-price="80">
+                                                        Kaksio
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-two-bedroom" id="two-bedroom"
+                                                        value="Kolmoi" data-price="80">
+                                                        Kolmoi
+                                                    </button>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-three-bedroom" id="three-bedroom"
+                                                        value="Neliö" data-price="80">
+                                                        Neliö
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                            <div class="product">
+                                <div class="image">
+                                    <img src="http://placehold.it/200x300" alt="">
+                                </div>
+
+                                <ul class="menu list-reset">
+                                    <li class="menu__item">
+                                        <button class="menu__btn lng-car-cleaning">Auton penkit</button>
+                                        <div class="dropdown">
+                                            <ul class="dropdown__list list-reset">
+                                                <li class="dropdown__item">
+                                                    <button class="dropdown__btn lng-car-seats" id="car-seats"
+                                                        value="Syväpuhdistus ja pesu paikan päällä" data-price="80">
+                                                        Syväpuhdistus ja pesu paikan päällä
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
     </div>
-</main>
+    <div class="space">&nbsp;</div>
     <footer>
-       <a class = "made__by" href="#">2023 (c) Made by Taburet</a>
+        <a class="made__by" href="#">2023 (c) Made by Taburet</a>
     </footer>
-    <script src="script.js"></script>
 </body>
+<script src="scripts/script.js"></script>
+<script src="scripts/lngArr.js"></script>
+<script src="scripts/langs.js"></script>
+
 </html>
