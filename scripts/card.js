@@ -14,10 +14,8 @@ const totalSum = () => {
 };
 
 const generateCart = () => {
-  document.querySelector('.cart').innerHTML = `<table class = 'services'> 
-<td>
-    <p class = "total"> Total: ${totalSum().toFixed(2)} €</p>
-</table>`;
+  document.querySelector('#total-price').innerHTML = `${totalSum().toFixed(2)} €`;
+  document.querySelector('#services').innerHTML = '';
   for (const key of keys) {
     if (key !== 'lang') {
       const item = JSON.parse(localStorage[key]);
@@ -32,7 +30,7 @@ const generateCart = () => {
                             </div> 
                         </td>
                         `;
-      document.querySelector('.services').appendChild(row);
+      document.querySelector('#services').appendChild(row);
     }
   }
 };
@@ -40,7 +38,7 @@ const mess = 'hi';
 document.getElementById('purchaise').innerHTML = `                                          
 <a href="mailto:blog@htmlacademy.ru&cc=mail@htmlacademy.ru?body=Привет, подпишитесь на рассылку">Напишите нам</a>                                    `;
 
-generateCart();
+// generateCart();
 
 document.addEventListener('click', (e) => {
   if (!e.target.classList.contains('minus')) {

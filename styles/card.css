@@ -47,9 +47,34 @@ main{
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
+.total-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-td {
+    width: 100%;
+}
 
 .services{
     width:100%;
+}
+
+#services{
+    width:100%;
+}
+
+
+
+#services td {
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+#services tr:first-child td {
+    border-top-width: 0px;
+    
 }
 
 .coll{

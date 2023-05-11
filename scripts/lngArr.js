@@ -3,6 +3,10 @@ const langArr = {
     fi: 'back',
     en: 'main',
   },
+  total: {
+    fi: 'Summa',
+    en: 'Final price',
+  },
   order__button: {
     fi: 'Tilause',
     en: 'Order',
@@ -184,5 +188,4 @@ const langArr = {
     fi: 'Syväpuhdistus ja pesu paikan päällä 199.00 €',
     en: 'Deep cleaning and washing on site 199.00 €',
   },
-
 };
