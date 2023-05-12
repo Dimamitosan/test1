@@ -1,7 +1,15 @@
 const langArr = {
+  alert_added: {
+    fi: 'lisätty korttiin',
+    en: 'added into your card',
+  },
+  alert_already: {
+    fi: 'on jo kortillasi',
+    en: 'is already in your card',
+  },
   main__button: {
-    fi: 'back',
-    en: 'main',
+    fi: 'Pääsivu',
+    en: 'Main',
   },
   total: {
     fi: 'Summa',

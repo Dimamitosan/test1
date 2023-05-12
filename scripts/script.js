@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const drops = document.querySelectorAll('.dropdown');
 
   document.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('dropdown__btn')) { return; }
+    if (!e.target.classList.contains('dropdown__btn')) {
+      return;
+    }
     const curServ = new serv(e.target.id, e.target.value, 0, e.target.dataset.price);
 
     // console.log("curServ", curServ)
@@ -21,10 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(curServ, JSON.stringify(curServ));
       curServ.count += 1;
       localStorage[curServ.id] = JSON.stringify(curServ);
-      alert(`${JSON.parse(localStorage[curServ.id]).value} added into your card`);
+      alert(
+        `${JSON.parse(localStorage[curServ.id]).value} ${
+          langArr['alert_already'][localStorage['lang']]
+        }`
+      );
       console.log(JSON.parse(localStorage[curServ.id]).value);
     } else {
-      alert(`${JSON.parse(localStorage[curServ.id]).value} is already in your card`);
+      alert(
+        `${JSON.parse(localStorage[curServ.id]).value} ${
+          langArr['alert_already'][localStorage['lang']]
+        }`
+      );
     }
   });
 
