@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage[curServ.id] = JSON.stringify(curServ);
       alert(
         `${JSON.parse(localStorage[curServ.id]).value} ${
-          langArr['alert_already'][localStorage['lang']]
+          langArr['alert_added'][localStorage['lang']]
         }`
       );
       console.log(JSON.parse(localStorage[curServ.id]).value);

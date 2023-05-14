@@ -1,4 +1,28 @@
+const translate = (word) => {
+  return langArr[word][localStorage['lang']];
+};
+
 const langArr = {
+  date: {
+    fi: 'Päivämäärä',
+    en: 'date',
+  },
+  phone: {
+    fi: 'puhelin',
+    en: 'phone',
+  },
+  problem: {
+    fi: 'ongelma',
+    en: 'problem',
+  },
+  problem__message: {
+    fi: 'Et ole antanut',
+    en: 'you did not enter',
+  },
+  message: {
+    fi: 'Tilaus on luotu, odota soittoa päivän aikana',
+    en: 'The order has been created, expect a call during the day',
+  },
   alert_added: {
     fi: 'lisätty korttiin',
     en: 'added into your card',

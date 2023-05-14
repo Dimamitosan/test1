@@ -61,24 +61,57 @@
 
                         <div class="col-sm-6 col-12">
                             <div class="purchase--info">
-                                <div class="purchaise" id="purchaise"></div>
-                                <a href="mailto:vlad@htmlbook.ru?subject=Вопрос по HTML&body=wqe">Задавайте
-                                    вопросы по электронной почте</a>
 
+                                <div class="user--data">
+                                    <a href="mailto:vlad@htmlbook.ru?subject=Вопрос по HTML&body=wqe">Задавайте
+                                        вопросы по электронной почте</a>
+
+                                    <div class="modal-window">
+                                        <div class="write_us">
+                                            <p>Write us!</p>
+                                        </div>
+                                        <input class="date" type="date" id="date">
+                                        <div class="tephone">
+                                            <input type="tel" class="phone art-stranger" name="phone" id="phone"
+                                                placeholder="+358-0-000-000">
+                                        </div>
+                                        <div>
+                                            <form name="publish">
+                                                <input type="text" id="discription" class="problem-area"
+                                                    placeholder="введите сообщение" />
+
+                                            </form>
+                                            <input type="submit" value="Submit" id="submit" class="item, sub"
+                                                onclick="isEmail()">
+                                        </div>
+
+                                        <div class="call_us">
+                                            <p> Call us</p>
+                                            <p>+14211241412</p>
+                                        </div>
+
+                                        <div class="mes">
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
     </div>
 
     <footer>
         <a class="made__by" href="#">2023 (c) Made by Taburet</a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="scripts/getInfo.js"></script>
     <script src="scripts/card.js"></script>
     <script src="scripts/lngArr.js"></script>
     <script src="scripts/langs.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "maks-normal",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node mailer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.2"
+  },
+  "devDependencies": {
+    "jquery": "^3.6.4",
+    "jquery-mask-plugin": "^1.14.16",
+    "nodemon": "^2.0.22"
+  }
+}

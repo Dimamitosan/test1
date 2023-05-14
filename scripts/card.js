@@ -1,18 +1,5 @@
 const keys = Object.keys(localStorage);
 
-const totalSum = () => {
-  const keys = Object.keys(localStorage);
-  const count = (acc, service) => {
-    if (service !== 'lang') {
-      let serv = JSON.parse(localStorage[service]);
-      let totalPerServ = serv.count * Number(serv.price);
-      acc = acc + totalPerServ;
-    }
-    return acc;
-  };
-  return keys.reduce(count, 0);
-};
-
 const generateCart = () => {
   document.querySelector('#total-price').innerHTML = `${totalSum().toFixed(2)} €`;
   document.querySelector('#services').innerHTML = '';
@@ -34,12 +21,19 @@ const generateCart = () => {
     }
   }
 };
-const mess = 'hi';
-document.getElementById('purchaise').innerHTML = `                                          
-<a href="mailto:blog@htmlacademy.ru&cc=mail@htmlacademy.ru?body=Привет, подпишитесь на рассылку">Напишите нам</a>                                    `;
 
-// generateCart();
-
+const totalSum = () => {
+  const keys = Object.keys(localStorage);
+  const count = (acc, service) => {
+    if (service !== 'lang') {
+      let serv = JSON.parse(localStorage[service]);
+      let totalPerServ = serv.count * Number(serv.price);
+      acc = acc + totalPerServ;
+    }
+    return acc;
+  };
+  return keys.reduce(count, 0);
+};
 document.addEventListener('click', (e) => {
   if (!e.target.classList.contains('minus')) {
     return;

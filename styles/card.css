@@ -16,6 +16,7 @@ main{
     background-color:pink;
 }
 
+
 .header__body{
     height: 100%;
     align-items: center;
@@ -47,6 +48,8 @@ main{
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
+
+
 .total-wrapper {
     display: flex;
     justify-content: space-between;
@@ -55,6 +58,7 @@ main{
 
 .services-td {
     width: 100%;
+    
 }
 
 .services{
@@ -85,10 +89,6 @@ main{
     width: 100%;
 }
 
-.purchase--info{
-    height: 100px;
-    background-color: green;
-}
 
 
 .demo{
@@ -98,10 +98,14 @@ main{
 }
 
 .cart{
+    
+    
+    height:auto;
+    max-height:100%;
     display: flex;
-   font-size: 18px;
-   background-color: #3c2e7a;
-   color: white;
+    font-size: 18px;
+    background-color: #3c2e7a;
+    color: white;
 }
 
 .cart td{
@@ -118,8 +122,11 @@ main{
 }
 
 .content{
+    min-height: 750px;
+    box-sizing: border-box;
+    overflow:hidden;
     background-color: blue;
-    height: 800px;
+    
 }
 
 .counter{
@@ -131,7 +138,42 @@ main{
     width: 30px;
     margin: 15px;
 }
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
 
+
+.purchase--info{
+    height: 500px;
+    background-color: green;
+}
+
+.publish{
+  
+}
+
+.date{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+.wqe{
+    width:100px;
+}
+.user--data{
+    text-align: center;
+}
+.phone{
+    width:100px;
+}
+
+.modal-window{
+    display: flex;
+    background-color: pink;
+    height: 400px;
+    flex-direction: column; 
+    justify-content: space-between;  
+}
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
