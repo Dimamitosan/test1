@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "commonjs",
   "description": "",
-  "main": "index.js",
+  "main": "mailer.js",
   "scripts": {
     "start": "node mailer.js"
   },

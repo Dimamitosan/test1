@@ -22,6 +22,26 @@ const isEmail = () => {
     <span class="message" id="message">
         <p class ="lng-message">${translate('message')}</p>
     </span>`;
+
+    fetch('http://localhost:5000/text-mail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        subject: 'Order',
+        text: `Problem:${info['problem']}, phone: ${info['phone']}, date: ${info['date']}`,
+      }),
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        alert(translate('message'));
+        // Success
+      });
   } else {
     document.querySelector('.mes').innerHTML = ` 
     <span class="message" id="message">
