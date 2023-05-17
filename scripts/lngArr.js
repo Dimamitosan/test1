@@ -3,6 +3,18 @@ const translate = (word) => {
 };
 
 const langArr = {
+  submit: {
+    fi: 'Lähetä',
+    en: 'Send',
+  },
+  call_us: {
+    fi: 'Soita meile ',
+    en: 'Call us',
+  },
+  write_us: {
+    fi: 'Ota yhteyttä',
+    en: 'Contact us',
+  },
   date: {
     fi: 'Päivämäärä',
     en: 'date',

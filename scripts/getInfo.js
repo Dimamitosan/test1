@@ -22,7 +22,15 @@ const isEmail = () => {
     <span class="message" id="message">
         <p class ="lng-message">${translate('message')}</p>
     </span>`;
-
+    let mail__services = '';
+    let id = 1;
+    for (const key of Object.keys(localStorage)) {
+      if (key !== 'lang') {
+        const item = JSON.parse(localStorage[key]);
+        mail__services += `${id})  Service: ${item.value} Count: ${item.count} Price:${item.price} €\n`;
+        id += 1;
+      }
+    }
     fetch('http://localhost:5000/text-mail', {
       method: 'POST',
       headers: {
@@ -30,7 +38,9 @@ const isEmail = () => {
       },
       body: JSON.stringify({
         subject: 'Order',
-        text: `Problem:${info['problem']}, phone: ${info['phone']}, date: ${info['date']}`,
+        text: `Date: ${info['date']} \nPhone: ${info['phone']}\nProblem:${
+          info['problem']
+        }\nTotal: ${totalSum()}€ \n${mail__services}`,
       }),
     })
       .then(function (response) {
