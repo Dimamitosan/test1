@@ -147,19 +147,19 @@ const langArr = {
 
   bedsbeds: {
     fi: 'Sängyn syväpuhdistus ja pesu',
-    en: 'Beds dry cleaning',
+    en: 'Mattress dry cleaning',
   },
   'single-bed': {
     fi: 'Yhden hengen sänky 80.00 €',
-    en: 'Single bed 80.00 €',
+    en: 'Single mattress 80.00 €',
   },
   'double-bed': {
     fi: 'Parisänky 120.00 €',
-    en: 'Double bed 120.00 €',
+    en: 'Double mattress 120.00 €',
   },
   'def-bed': {
     fi: 'Suojakäsittely / sänky 39.00 €',
-    en: 'Protective treatment / bed 39.00 €',
+    en: 'Protective treatment / mattress 39.00 €',
   },
 
   carpets: {

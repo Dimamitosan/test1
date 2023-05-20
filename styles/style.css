@@ -1,7 +1,6 @@
 html { height: 100%; } 
 body {
-    min-height: 100%;
-    background-color: black;
+    height: 100%;
 }
 .wrapper{
     min-height: 100%;
@@ -12,12 +11,21 @@ main{
     flex:1 1 auto;
 }
 .content{
-    margin: 0 5%;
-    max-width:90%;
+    background:none;
+    margin: auto;
+    max-width:65%;
 }
 
 .header{
-    background-color:pink;
+    text-align: center;
+    background-color:#e41937;
+    margin-bottom: 133px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .header__body{
@@ -25,29 +33,28 @@ main{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 65px;
 }
 .header__logo{
-   width: 80px;
-   height: 80px;
+   width: 65px;
+   height: 65px;
 }
 
 .change-lang{
+    font-size: 24px;
     margin: 0 0 0 30px;
     text-align: center;
     height: 30px;
     width: 50px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
+    background:none;
+    color: white;
 }
 
 .lng-order__button{
-    padding: 10px;
+    margin: auto;
+    padding: 0 10px ;
     color: white;
-    background-color: #3c2e7a;
-    border-radius: 50px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 
@@ -60,25 +67,53 @@ main{
         width: 70%;
     }
  }
-
+ .lng-about{
+    color: white;
+    font-size: 24px;
+    margin: 0 0 24px 0;
+}
 
 .about__us{
-    background-image: url(../pics/professional-cleaning-company.jpeg);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
+    background: linear-gradient(to bottom right,#d82943,rgb(250, 199, 208));
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    border: 4px solid #e41937;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 40px;
+   position: relative;
+   z-index: 2;
 }
+
+.circle_first{
+    width:330px;
+    height: 330px;
+    background: linear-gradient(to top left,#d82943,rgb(250, 199, 208));
+    border-radius: 50%;
+    position: absolute;
+    left:3%;
+    top: 25%;
+    z-index: 1;
+}
+
+.circle_second{
+    width:150px;
+    height: 150px;
+    background: linear-gradient(to top left,#d82943,rgb(250, 199, 208));
+    border-radius: 50%;
+    position: absolute;
+    right: 11%;
+    top: 18%;
+    z-index: 1;
+}
+
 
 .lng-about__text{
-    color: black;
-    font-size: 20px;
-    width: 50%;
+    color: white;
+    font-size: 14px;
 }
 
-@media (max-width: 775px) { 
+/* @media (max-width: 775px) { 
     .lng-about__text{
         width: 70%;
     }
@@ -92,51 +127,48 @@ main{
  @media (max-width: 340px) { 
     .lng-about__text{
         width: 100%;
-        font-size: 17px;
+        
     }
- }
+ } */
 
-
-.lng-about{
-    color: black;
-    font-size: 34px;
-    margin: 0 0 20px 0;
-}
-
-footer{
-    
+ .made{
+    bottom: 0;
+    align-items: center;
+    height: 40px;
     background-color: black;
-    padding: 10px;
+ }
+footer{
+    padding: 190px 0 0 0;
 }
 
 .made__by{
-    
     font-size: 20px;
     color: white;
 }
 
 .services{
-    background-color: pink;
+    margin-top: 71px;
     height: fit-content;
 }
 
 .image img{
-    border: 1px solid black;
+    border: 4px  solid #e41937;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
     height: 300px;
+    width: 350px;
     width: 100%;
     object-fit: cover;
 }
 
-.row{
-    padding: 100px 0 0 0;
-}
+
 .product{
     margin: 0 0 20px 0;
     background-color: white;
     text-align: center;
 }
 .info{
-    border: 2px  solid black;
+    
     padding: 10px 0;
 }
 
@@ -154,29 +186,32 @@ footer{
 }
 
 .menu{
-    /* height: 40px; */
     display:flex;
     flex-wrap: wrap;
     align-items: center;
 }
-
+.header__left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .menu__btn{
     z-index: 0;
     height: fit-content;
-    font-size: 28px;
+    font-size: 24px;
     width:100%;
     border: none;
-    color: #fff;
+    color: #dd4c61;
     padding: 5px 10px;
     cursor: pointer;
-    background-color: #333;
+    background-color: white;
 }
 
 .menu__btn--active{
     transition: background-color 0.3s ease-in-out;
     background-color: white;
-    border: 2px solid black;
+    
     color:black;
 }
 
@@ -191,13 +226,14 @@ footer{
     width:100%;
     font-size: 24px;
     justify-content: center;
-    background-color: #333;
+    background-color: rgb(230, 167, 167);
     border:none;
-    color: #fff;
+    color: white;
 }
 .dropdown__btn:hover{
     background-color: white;
-    color:#333;
+    color: black;
+   
 }
 
 .dropdown__item:last-child{

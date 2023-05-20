@@ -17,13 +17,23 @@
     <div class="wrapper">
         <main>
             <div class="header">
-                <div class="container">
+                <div class="content">
                     <div class="header__body">
                         <a href="#">
-                            <img class="header__logo" src="pics/Untitled.jpeg" alt="logo">
+                            <img class="header__logo" src="pics/logo.jpeg" alt="logo">
                         </a>
-                        <div>
-                            <a href="index.html" class="lng-main__button">Main</a>
+                        <div class="header__left">
+                            <a href="index.html" class="menu">
+                                <p class="lng-main__button">Main</p>
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 0L0 7.71429H2.75V18H8.25V12.8571H13.75V18H19.25V7.63714L22 7.71429L11 0Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+
                             <select class="change-lang">
                                 <option value="fi">FI</option>
                                 <option value="en">EN</option>
@@ -43,9 +53,8 @@
                                     <tr>
                                         <td>
                                             <div class="total-wrapper">
-                                                <div class="total lng-total"> Total:</div>
-                                                <div id="total-price">
-                                                </div>
+                                                <div class="basket">Basket</div>
+
                                             </div>
                                         </td>
                                     </tr>
@@ -64,27 +73,34 @@
 
                                 <div class="user--data">
                                     <div class="modal-window">
-                                        <div class="write_us lng-write_us">
-                                            <p>Write us!</p>
+
+                                        <div class="pick_date">
+                                            <div class="lng-apointment_date">Appointment date is at </div>
+                                            <input class="date" type="date" id="date">
                                         </div>
-                                        <input class="date" type="date" id="date">
+
                                         <div class="tephone">
+                                            <div class="lng-your_phone">Your phone</div>
                                             <input type="tel" class="phone art-stranger" name="phone" id="phone"
                                                 placeholder="+358-0-000-000">
                                         </div>
                                         <div>
+                                            <div class="discribe_prob">
+                                                Discribe your problem
+                                            </div>
                                             <form name="publish">
+
                                                 <input type="text" id="discription" class="problem-area"
-                                                    placeholder="введите сообщение" />
+                                                    placeholder="......." />
 
                                             </form>
+                                            <div class="total_total_price">
+                                                <div class="total lng-total"> Total:</div>
+                                                <div id="total-price">
+                                                </div>
+                                            </div>
                                             <input type="submit" value="Submit" id="submit" class="item, sub lng-submit"
                                                 onclick="isEmail()">
-                                        </div>
-
-                                        <div class="call_us lng-call_us">
-                                            <p> Call us</p>
-                                            <p>+14211241412</p>
                                         </div>
 
                                         <div class="mes">
