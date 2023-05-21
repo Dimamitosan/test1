@@ -29,15 +29,12 @@ select{
    height: 80px;
 }
 .menu{
-    
     display:flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .header__left{
-
     display: flex;
-   
     flex-direction: row;
     align-items: center;
 }
@@ -57,14 +54,18 @@ select{
     background:none;
     color: white;
 }
+.contenter{
+    display: flex;
+    justify-content: space-between;
+}
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
 
 
 .total-wrapper {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    text-align: center;
     width: 100%;
 }
 
@@ -129,7 +130,7 @@ select{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    
+
     border-radius: 30px;
 }
 
@@ -138,14 +139,26 @@ select{
     padding: 0;
 }
 
+.element{
+    width:40%;
+}
+
 .content{
     background:none;
     margin: auto;
     max-width:65%;
-    
 }
+@media (max-width: 491px) { 
+    .content{
+        max-width: 90%;
+    }
+ }
 
+.price{
+    width:20%;
+}
 .counter{
+    width: 40%;
     display: flex;
     align-items: center;
 }
@@ -154,6 +167,7 @@ select{
     width: 30px;
     margin: 15px;
 }
+
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
@@ -187,9 +201,7 @@ select{
 .wqe{
     width:100px;
 }
-.user--data{
-    
-}
+
 .tephone{
     margin: 0 0 20px 0;
     align-items: center;
@@ -204,21 +216,23 @@ select{
 
 .modal-window{
     display: flex;
-  
+    width: 350px;
     height: 400px;
     flex-direction: column; 
     padding: 10px;  
 }
 
-.discribe_prob{
+.lng-describe_prob{
     margin: 0 0 5px 0;
 }
 
+
+
 .sub{
-   
+    padding: 5px;
     color: white;
     background: linear-gradient(to bottom right,#fa6a80,rgb(250, 199, 208));
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid #e41937;
     font-size: 28px; 
 }
@@ -226,6 +240,10 @@ select{
 .problem-area{
     margin: 0 0 20px 0;
     border: 1px solid black;
+    width:300px;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
 }
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
@@ -233,10 +251,10 @@ select{
 footer{
     background-color: black;
     padding: 10px;
+    margin: 50px 0 0 0;
 }
 
 .made__by{
-    
     font-size: 20px;
     color: white;
 }

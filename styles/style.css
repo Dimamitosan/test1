@@ -113,32 +113,11 @@ select{
     font-size: 14px;
 }
 
-/* @media (max-width: 775px) { 
-    .lng-about__text{
-        width: 70%;
-    }
- }
 
- @media (max-width: 557px) { 
-    .lng-about__text{
-        width: 100%;
-    }
- }
- @media (max-width: 340px) { 
-    .lng-about__text{
-        width: 100%;
-        
-    }
- } */
-
- .made{
-    bottom: 0;
-    align-items: center;
-    height: 40px;
-    background-color: black;
- }
 footer{
-    padding: 190px 0 0 0;
+    margin: 190px 0 0 0;
+    padding: 10px;
+    background-color: black;
 }
 
 .made__by{

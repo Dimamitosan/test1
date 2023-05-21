@@ -19,7 +19,23 @@ const langArr = {
     fi: 'Päivämäärä',
     en: 'date',
   },
+  describe_prob: {
+    fi: 'kuvaile ongelmaasi',
+    en: 'Describe your problem',
+  },
+  apointment_date: {
+    fi: 'Varauspäivä on klo',
+    en: 'Appointment date is at',
+  },
+  basket: {
+    fi: 'Kori',
+    en: 'basket',
+  },
   phone: {
+    fi: 'puhelin',
+    en: 'phone',
+  },
+  your_phone: {
     fi: 'puhelin',
     en: 'phone',
   },
@@ -29,7 +45,7 @@ const langArr = {
   },
   problem__message: {
     fi: 'Et ole antanut',
-    en: 'you did not enter',
+    en: 'You did not enter',
   },
   message: {
     fi: 'Tilaus on luotu, odota soittoa päivän aikana',

@@ -18,10 +18,6 @@ app.use(allowCrossDomain);
 
 require('dotenv').config();
 
-var log = require('./scripts/creator.js');
-
-console.log(log, 'ddd');
-
 app.post('/text-mail', (req, res) => {
   const { subject, text } = req.body;
   console.log('send', req.body);

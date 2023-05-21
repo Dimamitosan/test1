@@ -7,14 +7,16 @@ const generateCart = () => {
     if (key !== 'lang') {
       const item = JSON.parse(localStorage[key]);
       const row = document.createElement('tr');
-      row.innerHTML = `<td class = "${key}"> 
-                            <p>${item.value}</p>
-                            <div class = "counter">
+      row.innerHTML = `<td class = "${key} "> 
+                            <p class = "element " >${item.value}</p>
+                            <div class = "counter ">
+                              
                                 <button class = "minus" id="${key}">-</button>
                                     <p>${item.count}</p>
                                 <button class = "plus" id="${key}">+</button>
-                                    <p>${(item.count * item.price).toFixed(2)}€</p>
-                            </div> 
+                                </div> 
+                                    <p class = "price">${(item.count * item.price).toFixed(2)}€</p>
+                           
                         </td>
                         `;
       document.querySelector('#services').appendChild(row);
