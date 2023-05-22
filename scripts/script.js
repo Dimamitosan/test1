@@ -6,8 +6,19 @@ function serv(id, value, count, price) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log(window.location.hash.substring(1), 'sad');
+  const counter = () => {
+    const keys = Object.keys(localStorage);
+    let sum = 0;
+    for (const key of keys) {
+      if (key !== 'lang') {
+        const item = JSON.parse(localStorage[key]);
+        sum += item.count;
+      }
+    }
 
+    document.getElementById('counter').innerHTML = sum;
+  };
+  counter();
   const menuBtns = document.querySelectorAll('.menu__btn');
   const drops = document.querySelectorAll('.dropdown');
 
@@ -16,19 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     const curServ = new serv(e.target.id, e.target.value, 0, e.target.dataset.price);
-
-    // console.log("curServ", curServ)
-
     if (!localStorage[curServ.id]) {
-      console.log(curServ, JSON.stringify(curServ));
       curServ.count += 1;
+
       localStorage[curServ.id] = JSON.stringify(curServ);
+
       alert(
         `${JSON.parse(localStorage[curServ.id]).value} ${
           langArr['alert_added'][localStorage['lang']]
         }`
       );
-      console.log(JSON.parse(localStorage[curServ.id]).value);
+      counter();
     } else {
       alert(
         `${JSON.parse(localStorage[curServ.id]).value} ${
@@ -50,12 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       drops.forEach((el) => {
         if (el !== drop) {
+          el.closest('.menu')
+            .querySelector('.menu__btn')
+            .querySelector('.arrow')
+            .classList.remove('arrow--active');
+
           el.classList.remove('dropdown--active');
         }
       });
 
       drop.classList.toggle('dropdown--active');
       currentBtn.classList.toggle('menu__btn--active');
+      currentBtn.querySelector('.arrow').classList.toggle('arrow--active');
     });
   });
 
@@ -66,6 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       drops.forEach((el) => {
         el.classList.remove('dropdown--active');
+        el.closest('.menu')
+          .querySelector('.menu__btn')
+          .querySelector('.arrow')
+          .classList.remove('arrow--active');
       });
     }
   });

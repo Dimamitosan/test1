@@ -22,11 +22,11 @@ select{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 65px;
 }
 .header__logo{
-   width: 80px;
-   height: 80px;
+   width: 65px;
+   height: 65px;
 }
 .menu{
     display:flex;
@@ -175,15 +175,13 @@ select{
 
 
 .pick_date{ 
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+    align-items: center;    
     font-size:15px ;
     margin: 0 0 20px 0;
 }
 
 .date{
-    padding-left: 10px;
+    padding-top: 10px;
     background: none;
 }
 .total_total_price{
@@ -226,9 +224,12 @@ select{
     margin: 0 0 5px 0;
 }
 
-
+.mes{
+    padding: 50px 0 0 0;
+}
 
 .sub{
+    width:300px;
     padding: 5px;
     color: white;
     background: linear-gradient(to bottom right,#fa6a80,rgb(250, 199, 208));

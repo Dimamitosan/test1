@@ -1,15 +1,14 @@
 const select = document.querySelector('select');
-console.log(select);
+
 const allLang = ['fi', 'en'];
 
 const currentLanguage = localStorage.lang;
-console.log(currentLanguage, 'scurrentLanguage');
+
 if (currentLanguage) {
   select.value = currentLanguage;
 } else {
   localStorage.setItem('lang', select.value);
 }
-console.log(select.value, 'select value');
 
 if (select) {
   select.addEventListener('change', changeLanguage);

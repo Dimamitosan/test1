@@ -16,8 +16,7 @@ const isEmail = () => {
   const infoArr = [info['problem'], info['phone'], info['date']];
   let message = translate('message');
 
-  if (info['problem'] && info['phone'] && info['date']) {
-    console.log('qw', totalSum());
+  if (info['problem'] && info['phone'] && info['date'] && localStorage.length > 1) {
     document.querySelector('.mes').innerHTML = ` 
     <span class="message" id="message">
         <p class ="lng-message">${translate('message')}</p>
@@ -44,11 +43,9 @@ const isEmail = () => {
       }),
     })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
         alert(translate('message'));
         // Success
       });

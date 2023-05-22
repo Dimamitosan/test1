@@ -5,7 +5,7 @@ const translate = (word) => {
 const langArr = {
   submit: {
     fi: 'Lähetä',
-    en: 'Send',
+    en: 'Submit',
   },
   call_us: {
     fi: 'Soita meile ',
@@ -29,15 +29,15 @@ const langArr = {
   },
   basket: {
     fi: 'Kori',
-    en: 'basket',
+    en: 'Basket',
   },
   phone: {
     fi: 'puhelin',
     en: 'phone',
   },
   your_phone: {
-    fi: 'puhelin',
-    en: 'phone',
+    fi: 'Puhelimesi',
+    en: 'Your phone',
   },
   problem: {
     fi: 'ongelma',
@@ -100,7 +100,7 @@ const langArr = {
   },
 
   'price-for-sofas': {
-    fi: 'Kahden istuttava',
+    fi: 'Pesuhinnasto sohville',
     en: 'Sofa cleaning',
   },
   '2-sofa': {
