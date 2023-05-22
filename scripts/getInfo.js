@@ -15,54 +15,57 @@ const isEmail = () => {
 
   const infoArr = [info['problem'], info['phone'], info['date']];
   let message = translate('message');
-
-  if (info['problem'] && info['phone'] && info['date'] && localStorage.length > 1) {
-    document.querySelector('.mes').innerHTML = ` 
+  if (localStorage.length > 1) {
+    if (info['problem'] && info['phone'] && info['date']) {
+      document.querySelector('.mes').innerHTML = ` 
     <span class="message" id="message">
         <p class ="lng-message">${translate('message')}</p>
     </span>`;
-    let mail__services = '';
-    let id = 1;
-    for (const key of Object.keys(localStorage)) {
-      if (key !== 'lang') {
-        const item = JSON.parse(localStorage[key]);
-        mail__services += `${id})  Service: ${item.value} Count: ${item.count} Price:${item.price} €\n`;
-        id += 1;
+      let mail__services = '';
+      let id = 1;
+      for (const key of Object.keys(localStorage)) {
+        if (key !== 'lang') {
+          const item = JSON.parse(localStorage[key]);
+          mail__services += `${id})  Service: ${item.value} Count: ${item.count} Price:${item.price} €\n`;
+          id += 1;
+        }
       }
-    }
-    fetch('http://localhost:5000/text-mail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: 'Order',
-        text: `Date: ${info['date']} \nPhone: ${info['phone']}\nProblem:${
-          info['problem']
-        }\nTotal: ${totalSum()}€ \n${mail__services}`,
-      }),
-    })
-      .then(function (response) {
-        return response.json();
+      fetch('http://localhost:5000/text-mail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: 'Order',
+          text: `Date: ${info['date']} \nPhone: ${info['phone']}\nProblem:${
+            info['problem']
+          }\nTotal: ${totalSum()}€ \n${mail__services}`,
+        }),
       })
-      .then(function (data) {
-        alert(translate('message'));
-        // Success
-      });
-  } else {
-    document.querySelector('.mes').innerHTML = ` 
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          alert(translate('message'));
+          // Success
+        });
+    } else {
+      document.querySelector('.mes').innerHTML = ` 
     <span class="message" id="message">
         <p class ="lng-problem__message">${translate('problem__message')}</p>
     </span>`;
 
-    for (const key in info) {
-      if (!info[key]) {
-        document.querySelector('#message').innerHTML += `<p class="lng-${key}"> ${translate(
-          key
-        )}</p>
+      for (const key in info) {
+        if (!info[key]) {
+          document.querySelector('#message').innerHTML += `<p class="lng-${key}"> ${translate(
+            key
+          )}</p>
             `;
+        }
       }
     }
+  } else {
+    return;
   }
 };
 
