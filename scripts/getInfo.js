@@ -26,7 +26,7 @@ const isEmail = () => {
       for (const key of Object.keys(localStorage)) {
         if (key !== 'lang') {
           const item = JSON.parse(localStorage[key]);
-          mail__services += `${id})  Service: ${item.value} Count: ${item.count} Price:${item.price} €\n`;
+          mail__services += `${id})  Service: ${item.value} Count: ${item.count} \n`;
           id += 1;
         }
       }

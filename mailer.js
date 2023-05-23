@@ -39,7 +39,6 @@ app.post('/text-mail', (req, res) => {
   transporter.sendMail(mailOptions);
   res.status(200).send({ message: 'mail send' });
 });
-// app.use('/v1', route);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
